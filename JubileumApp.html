@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jubileum Calculator</title>
+    <link rel="stylesheet" href="JubileumApp.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <form id="main-form">
+        <table>
+          <tr id="column-names">
+            <th>Naam:</th>
+            <th>Geboortedatum:</th>
+          </tr>
+          <tr id="form-row">
+            <td><input type="text" placeholder="John Doe" id="name" /></td>
+            <td>
+              <input
+                type="text"
+                placeholder="19-03-1985"
+                size="10"
+                id="birthdate"
+              />
+            </td>
+            <td><input type="submit" value="+" /></td>
+          </tr>
+        </table>
+      </form>
+      <div class="error-message" id="error-message"></div>
+      <input
+        type="button"
+        class="button"
+        id="calculate-jubileum"
+        value="Bereken gezamenlijk jubileum"
+      />
+      <input
+        type="button"
+        class="button"
+        id="reset-list"
+        value="Iedereen wissen"
+      />
+      <ul id="jubileum-list"></ul>
+    </div>
+  </body>
+  <script src="JubileumApp.js"></script>
+</html>
